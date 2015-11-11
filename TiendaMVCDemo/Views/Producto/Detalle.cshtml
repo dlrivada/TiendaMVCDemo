@@ -1,0 +1,12 @@
+﻿@model TiendaMVCDemo.Models.Producto
+
+@{
+    ViewBag.Title = "Detalle";
+}
+
+<h2>Detalle de @Html.DisplayFor(o => o.Nombre)</h2>
+<h3>@Model.Fabricante</h3>
+<h3>@Html.DisplayFor(o=>o.PvP)</h3>
+
+@Html.ActionLink("Volver","Index")
+
